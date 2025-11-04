@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Qianyi Wu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: white;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #6fa8dc 0%, #9fc5e8 100%);
+            padding: 20px 40px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 500;
+            color: #2c3e50;
+            text-decoration: none;
+            font-family: 'Adamina', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Adamina', serif;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-links a.active {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .content-section {
+            background: white;
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-family: 'Adamina', serif;
+        }
+
+        .content-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 15px;
+                text-align: right;
+            }
+            
+            .header-section {
+                padding: 15px 20px;
+            }
+            
+            .content-section {
+                padding: 40px 20px;
+            }
+
+            .page-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>   
+    <div class="header-section">
+        <nav>
+            <a href="index.html" class="logo">Qianyi Wu</a>
+            <ul class="nav-links">
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="research.html">My Research</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content-section">
+        <h1 class="page-title">About Me</h1>
+        
+        <p class="content-text">
+            I'm a linguist-in-training - an MPhil student in Linguistics at University College London. I'm interested in syntax, semantics, and computational linguistics.
+        </p>
+        
+        <p class="content-text">
+            Currently, I'm working on information structure in Mandarin, namely, the phonological form ta can be used as a scalar focus-sensitive particle.
+        </p>
+
+        <p class="content-text">
+            [Add more information about yourself here - your background, education, interests, research areas, etc.]
+        </p>
+
+        <p class="content-text">
+            I occasionally write about linguistics and language on my <a href="blog.html" style="color: #6fa8dc; text-decoration: none;">blog</a>.
+        </p>
+    </div>
+</body>
+</html>

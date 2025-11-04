@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Research - Qianyi Wu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: white;
+        }
+
+        .header-section {
+            background: linear-gradient(135deg, #6fa8dc 0%, #9fc5e8 100%);
+            padding: 20px 40px;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 500;
+            color: #2c3e50;
+            text-decoration: none;
+            font-family: 'Adamina', serif;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            margin: 0;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'Adamina', serif;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-links a.active {
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .content-section {
+            background: white;
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-title {
+            font-size: 32px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-family: 'Adamina', serif;
+        }
+
+        .research-intro {
+            margin-bottom: 50px;
+            max-width: 800px;
+        }
+
+        .research-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .project-section {
+            margin-bottom: 50px;
+            max-width: 800px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project-section:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-size: 26px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-family: 'Adamina', serif;
+        }
+
+        .project-description {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .subsection-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-family: 'Adamina', serif;
+        }
+
+        .publication-item, .presentation-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #6fa8dc;
+        }
+
+        .item-title {
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .item-details {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .item-status {
+            font-size: 14px;
+            color: #999;
+            font-style: italic;
+            margin-top: 3px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 15px;
+                text-align: right;
+            }
+            
+            .header-section {
+                padding: 15px 20px;
+            }
+            
+            .content-section {
+                padding: 40px 20px;
+            }
+
+            .page-title {
+                font-size: 24px;
+            }
+
+            .project-title {
+                font-size: 22px;
+            }
+
+            .subsection-title {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>   
+    <div class="header-section">
+        <nav>
+            <a href="index.html" class="logo">Qianyi Wu</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="research.html" class="active">My Research</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content-section">
+        <h1 class="page-title">My Research</h1>
+        
+        <div class="research-intro">
+            <p class="research-text">
+                My research interests lie at the intersection of syntax, semantics, and information structure, with a particular focus on Mandarin Chinese. I am interested in how linguistic forms encode meaning and how information is packaged and conveyed in discourse.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h2 class="project-title">Information Structure in Mandarin: The Scalar Focus Particle <em>ta</em></h2>
+            
+            <p class="project-description">
+                My current research investigates the phonological form <em>ta</em> in Mandarin Chinese and its use as a scalar focus-sensitive particle. This work explores how information structure is realized in Mandarin and contributes to our understanding of focus particles cross-linguistically.
+            </p>
+
+            <p class="project-description">
+                [Add more details about your project here - research questions, methodology, key findings, theoretical implications, etc.]
+            </p>
+
+            <h3 class="subsection-title">Publications</h3>
+            
+            <div class="publication-item">
+                <div class="item-title">[Your Paper Title]</div>
+                <div class="item-details">[Journal/Conference Name]</div>
+                <div class="item-status">Under review</div>
+            </div>
+
+            <div class="publication-item">
+                <div class="item-title">[Your Dissertation Title]</div>
+                <div class="item-details">MPhil Dissertation, University College London</div>
+                <div class="item-status">[Year or expected completion date]</div>
+            </div>
+
+            <h3 class="subsection-title">Presentations</h3>
+            
+            <div class="presentation-item">
+                <div class="item-title">[Presentation Title]</div>
+                <div class="item-details">[Conference/Workshop Name], [Location]</div>
+                <div class="item-status">[Date]</div>
+            </div>
+
+            <div class="presentation-item">
+                <div class="item-title">[Presentation Title]</div>
+                <div class="item-details">[Conference/Workshop Name], [Location]</div>
+                <div class="item-status">[Date]</div>
+            </div>
+        </div>
+
+        <!-- Add more project sections if you have other research projects -->
+    </div>
+</body>
+</html>
