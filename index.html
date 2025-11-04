@@ -12,6 +12,7 @@
         }
 
         @import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
         
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -92,37 +93,36 @@
 
         .gloss-container {
             margin-bottom: 40px;
+            display: inline-block;
+        }
+
+        .gloss-table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        .gloss-table td {
+            padding: 0 15px;
             text-align: center;
+            vertical-align: top;
         }
 
-        .gloss-line {
-            font-size: 16px;
-            color: #333;
-            margin-bottom: 8px;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 2px;
-        }
-
-        .chinese-line {
+        .gloss-table .chinese-cell {
             font-size: 20px;
             color: #333;
-            margin-bottom: 8px;
-            letter-spacing: 8px;
+            padding-bottom: 8px;
         }
 
-        .ipa-line {
-            font-size: 14px;
-            color: #333;
-            margin-bottom: 8px;
-            font-family: 'Courier New', monospace;
-            letter-spacing: 1px;
-        }
-
-        .english-line {
+        .gloss-table .ipa-cell {
             font-size: 16px;
             color: #333;
-            margin-bottom: 15px;
-            letter-spacing: 4px;
+            font-family: 'Charis SIL', 'Doulos SIL', 'Gentium Plus', serif;
+            padding-bottom: 8px;
+        }
+
+        .gloss-table .english-cell {
+            font-size: 16px;
+            color: #333;
         }
 
         .translation {
@@ -162,9 +162,20 @@
                 padding: 40px 20px;
             }
             
-            .chinese-greeting {
-                font-size: 32px;
-                letter-spacing: 4px;
+            .gloss-table td {
+                padding: 0 8px;
+            }
+            
+            .gloss-table .chinese-cell {
+                font-size: 18px;
+            }
+            
+            .gloss-table .ipa-cell {
+                font-size: 14px;
+            }
+            
+            .gloss-table .english-cell {
+                font-size: 14px;
             }
         }
     </style>
@@ -185,9 +196,32 @@
 
     <div class="content-section">       
         <div class="gloss-container">
-            <div class="chinese-line">你好，　　我　　是　　吴　　　倩　　　怡</div>
-            <div class="ipa-line">ni²⁴-xaʊ²¹⁴,　wo²¹⁴　ʂɻ̩⁵²　wu²⁴　-tɕʰiɛn⁴²　-ji²⁴</div>
-            <div class="english-line">Hello,　　　I　　am　　Wu　　-Qian　　-yi</div>
+            <table class="gloss-table">
+                <tr>
+                    <td class="chinese-cell">你好，</td>
+                    <td class="chinese-cell">我</td>
+                    <td class="chinese-cell">是</td>
+                    <td class="chinese-cell">吴</td>
+                    <td class="chinese-cell">倩</td>
+                    <td class="chinese-cell">怡</td>
+                </tr>
+                <tr>
+                    <td class="ipa-cell">ni²⁴xaʊ²¹⁴</td>
+                    <td class="ipa-cell">wo²¹⁴</td>
+                    <td class="ipa-cell">ʂɻ̩⁵²</td>
+                    <td class="ipa-cell">wu²⁴</td>
+                    <td class="ipa-cell">tɕʰiɛn⁴²</td>
+                    <td class="ipa-cell">ji²⁴</td>
+                </tr>
+                <tr>
+                    <td class="english-cell">Hello,</td>
+                    <td class="english-cell">I</td>
+                    <td class="english-cell">am</td>
+                    <td class="english-cell">Wu</td>
+                    <td class="english-cell">Qian</td>
+                    <td class="english-cell">yi</td>
+                </tr>
+            </table>
         </div>
         
         <div class="translation">'Hello, I'm Wu Qianyi.'</div>
